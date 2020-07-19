@@ -1,4 +1,4 @@
-class Settings():
+class Settings:
     # 存储所有设置的类
     def __init__(self):
         # 屏幕设置
