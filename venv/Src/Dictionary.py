@@ -59,3 +59,35 @@ print("===================")
 
 for language in set(favorite_language.values()):  # 使用set去重
     print('去重' + language)
+
+aliens = []  # 在列表中存储字典
+for i in range(3):
+    aliens.append(alien_0)
+print(aliens)
+
+pizza = {  # 在字典中存储列表
+    'crust': 'thick',
+    'toppings': ['mushroom', 'extra cheese']
+}
+print("You ordered a " + pizza['crust'] + '-crusted pizza ' + 'with the following toppings:')
+for topping in pizza['toppings']:
+    print('\t' + topping)
+
+users = {
+    'aeinstein': {
+        'first': 'albert',
+        'last': 'einstein',
+        'location': 'princetion'
+    },
+    'mcurie': {
+        'first': 'marie',
+        'last': 'curie',
+        'location': 'paris'
+    }
+}
+for username, user_info in users.items():
+    print('\nUser name:\t' + username)
+    full_name = user_info['first'] + ' ' + user_info['last']
+    location = user_info['location']
+    print('\tFull name:\t' + full_name)
+    print('\tLocation:\t' + location)
