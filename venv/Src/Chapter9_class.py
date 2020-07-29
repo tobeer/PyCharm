@@ -16,6 +16,8 @@ print("My dog name is " + dog1.name.title())
 print("My dog is " + str(dog1.age) + " years old")
 dog1.sit()
 dog1.roll_over()
+dog1.sex = 'male'  # 动态性
+print(dog1.sex)
 
 
 class Car:
