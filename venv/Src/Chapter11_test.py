@@ -1,6 +1,6 @@
 from Chapter8_function import name
 import unittest
-from Chapter10_testClass import AnonymousSurvey
+from Chapter11_testClass import AnonymousSurvey
 
 
 class NameTestCase(unittest.TestCase):
