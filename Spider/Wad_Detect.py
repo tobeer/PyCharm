@@ -11,6 +11,6 @@ print(det.detect(url))
 import whois
 
 # 查看网站所有者信息
-url = 'www.baidu.com'
+url = 'https://baidu.com'
 data = whois.whois(url)
 print(data)
