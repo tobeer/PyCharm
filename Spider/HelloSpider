@@ -7,8 +7,8 @@ import requests
 2. 定位所需信息
 3. 得到并处理信息
 """
-url = 'https://www.python.org/dev/peps/pep-0020/'
-xpath = '//*[@id="the-zen-of-python"]/pre/text()'  # XPath路径表达式，选取所有元素，且这些元素拥有值为"the-zen-of-python"的id属性。
+url = 'https://inventwithpython.com/blog/2018/08/17/the-zen-of-python-explained/'
+xpath = '//*[@class="content-body"]/pre/text()'  # XPath路径表达式，选取所有元素，且这些元素拥有值为"the-zen-of-python"的id属性。
 res = requests.get(url)
 ht = lxml.html.fromstring(res.text)  # parse the html, return a single element/document
 text = ht.xpath(xpath)
